@@ -26,3 +26,7 @@ scrape_configs:
     - targets: ["host.docker.internal:1776"]
 
 ```
+
+4. Run `docker-compose up` to setup and start prometheus and grafana.
+5. Grafana is now accessible at `http://localhost:3000/`. The dashboard is named SLEdge. Prometheus is now accessible at `http://localhost:9090/` if you want to issue PromQL queries. You can run driver scripts and you should see the results reflected in the dashboard.
+6. When done, hit control+C and optionally run `docker-compose down` to clean up docker assets
